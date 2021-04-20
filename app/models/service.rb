@@ -1,3 +1,3 @@
 class Service < ApplicationRecord
-  belongs_to :appointment
+  has_many :appointments, through: :selectedservice
 end

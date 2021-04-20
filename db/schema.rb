@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_20_152001) do
+ActiveRecord::Schema.define(version: 2021_04_20_174410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,17 +52,24 @@ ActiveRecord::Schema.define(version: 2021_04_20_152001) do
     t.index ["user_id"], name: "index_appointments_on_user_id"
   end
 
+  create_table "selected_services", force: :cascade do |t|
+    t.bigint "appointment_id", null: false
+    t.bigint "service_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["appointment_id"], name: "index_selected_services_on_appointment_id"
+    t.index ["service_id"], name: "index_selected_services_on_service_id"
+  end
+
   create_table "services", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.string "offer"
     t.string "description"
     t.integer "duration"
-    t.bigint "appointment_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
-    t.index ["appointment_id"], name: "index_services_on_appointment_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -81,5 +88,6 @@ ActiveRecord::Schema.define(version: 2021_04_20_152001) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "appointments", "users"
-  add_foreign_key "services", "appointments"
+  add_foreign_key "selected_services", "appointments"
+  add_foreign_key "selected_services", "services"
 end

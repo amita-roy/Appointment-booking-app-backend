@@ -6,7 +6,6 @@ class CreateServices < ActiveRecord::Migration[6.1]
       t.string :offer
       t.string :description
       t.integer :duration
-      t.references :appointment, null: false, foreign_key: true
 
       t.timestamps
     end
