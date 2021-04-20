@@ -9,6 +9,11 @@
 - Only logged in user can access the `appointments` end point and see their own appointments
 - Using factory bot for creating a mock user
 
+## Screenshots
+
+- ![Appointments Endpoint](./screenshots/appointments-endpoint.png)
+- ![Services Endpoint](./screenshots/services-endpoint.png)
+
 ## API Endpoints
 
 - `api/v1/auth/signin` (post)
