@@ -1,5 +1,4 @@
 class Api::V1::AppointmentsController < ApiController
-  skip_before_action :authenticate_user!
   before_action :set_user
 
   def index

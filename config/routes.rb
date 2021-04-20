@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       post 'auth/signup', to: 'authentication#signup'
       get 'appointments', to: 'appointments#index'
       post 'appointments', to: 'appointments#create'
+      get 'services', to: 'services#index'
     end
   end
 end

@@ -1,5 +1,5 @@
-class Api::V1::AppointmentsController < ApiController
-  skip_before_action :authenticate_user!
+class Api::V1::ServicesController < ApiController
+  skip_before_action :authenticate_user!, only: [:index]
 
   def index
     @services = Service.all
