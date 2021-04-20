@@ -60,7 +60,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rubocop', '~> 1.12', '>= 1.12.1'
+gem 'rubocop', '~> 1.13'
 gem 'devise'
 gem 'jwt'
 gem 'active_model_serializers', '~> 0.10.12'
