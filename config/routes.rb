@@ -5,5 +5,4 @@ Rails.application.routes.draw do
       post "auth/signup", to: "authentication#signup"
     end
   end
-  resources :locations
 end
