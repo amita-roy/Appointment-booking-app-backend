@@ -1,4 +1,5 @@
 class Appointment < ApplicationRecord
   belongs_to :user
-  has_many :services, through: :selectedservice
+  has_many :SelectedServices
+  has_many :services, through: :SelectedServices
 end
