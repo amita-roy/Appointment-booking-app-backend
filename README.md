@@ -77,7 +77,8 @@ Open `http://localhost:3000/` in your browser.
 > for test formatting add below script in .rspec file
 
 ```
-    rpsec --format documentation
+    --format documentation
+    --color
 ```
 
 > To run all the tests run below script in the terminal
