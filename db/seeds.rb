@@ -28,7 +28,7 @@ Service.create({ name: 'Legs Waxing', price: 400, offer: '0', description: 'Suga
 
 Service.create({ name: 'Hair Spa', price: 600, offer: '20', description: 'For more nurishment and shinning',
                  duration: '60',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/head - wash - dermaessentia_large_mt6ouv.jpg' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619452198/hair_2520salon_ekio94.jpg' })
 
 Service.create({ name: 'Highlights', price: 1500, offer: '25', description: 'Mid length', duration: '180',
                  image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_16_jz8c3l.png' })
