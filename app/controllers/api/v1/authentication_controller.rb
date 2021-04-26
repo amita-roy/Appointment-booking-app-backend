@@ -4,7 +4,7 @@ class Api::V1::AuthenticationController < ApiController
   def signin
     user = User.find_by(email: params[:email])
     if user && (user.valid_password? params[:password])
-      render json: { token: JsonWebToken.encode(sub: user.id) }
+      render json: { token: JsonWebToken.encode(sub: user.id), user: user }
     else
       render json: { errors: ['Invalid email or password'] }, status: 400
     end
@@ -13,7 +13,7 @@ class Api::V1::AuthenticationController < ApiController
   def signup
     user = User.new(user_params)
     if user.save
-      render json: { token: JsonWebToken.encode(sub: user.id) }
+      render json: { token: JsonWebToken.encode(sub: user.id), user: user }
     else
       render json: { errors: user.errors.full_messages }, status: 400
     end
