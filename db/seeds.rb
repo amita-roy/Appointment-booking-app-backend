@@ -7,40 +7,52 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Service.create({ name: 'Organic Facial', price: 700, offer: '20', description: 'Tan removal facial', duration: '55',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447022/pngegg_6_tazwdp.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447022/pngegg_6_tazwdp.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Charcoal Facial', price: 750, offer: '10', description: 'Deep cleansing', duration: '55',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619446965/pngegg_4_tkt9ga.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619446965/pngegg_4_tkt9ga.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Body Massage', price: 850, offer: '10', description: 'Stone massage', duration: '60',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619449097/pngegg111_nch5l0.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619449097/pngegg111_nch5l0.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Couple Massage', price: 1800, offer: '12', description: 'Progressive muscle relaxation',
                  duration: '70',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_11_d4a8as.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_11_d4a8as.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Full Body Waxing', price: 1200, offer: '10', description: 'Extra care for pre and post waxing',
                  duration: '120',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_7_skzsio.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_7_skzsio.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Legs Waxing', price: 400, offer: '0', description: 'Sugar wax', duration: '30',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/Waxing-technique-for-glowing-skin-740x560-removebg-preview_g3qmdp.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/Waxing-technique-for-glowing-skin-740x560-removebg-preview_g3qmdp.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Hair Spa', price: 600, offer: '20', description: 'For more nurishment and shinning',
                  duration: '60',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/head-wash-dermaessentia_large_mt6ouv.jpg' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/head-wash-dermaessentia_large_mt6ouv.jpg',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Highlights', price: 1500, offer: '25', description: 'Mid length', duration: '180',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_16_jz8c3l.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_16_jz8c3l.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Nails Extension', price: 1000, offer: '20', description: 'With Manicure', duration: '90',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_9_hazbfx.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447023/pngegg_9_hazbfx.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Hand & Foot Care', price: 900, offer: '15', description: 'Manicure & Pedicure', duration: '100',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_8_qqke3k.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_8_qqke3k.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Hairdressing & Makeup', price: 2000, offer: '20', description: 'Any Ocassion', duration: '120',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_13_hplqcb.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/pngegg_13_hplqcb.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
 
 Service.create({ name: 'Threading', price: 500, offer: '10', description: 'Full face', duration: '45',
-                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/Daco_4146176_c9uevj.png' })
+                 image: 'https://res.cloudinary.com/dalroqfi9/image/upload/v1619447024/Daco_4146176_c9uevj.png',
+                 long_desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' })
