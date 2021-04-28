@@ -3,20 +3,23 @@ class Api::V1::AppointmentsController < ApiController
 
   def index
     @appointments = @user.appointments
-    render json: @appointments, include: ['services']
+    render json: { appointments: @appointments }, status: 200
   end
 
   def create
-    @appointment = current_user.appointments.new(appointment_params)
+    date = params['date']
+    time = params['time']
+    total_amount = params['total_amount']
+    @appointment = current_user.appointments.new({ date: date, time: time, total_amount: total_amount })
+    params['services'].each do |s|
+      service = Service.find(s['id'])
+      @appointment.services.push(service)
+    end
     @appointment.save
     render json: { success: 'Thanks for your booking' }, status: 200
   end
 
   private
-
-  def appointment_params
-    params.permit(:date, :time, services: [])
-  end
 
   def set_user
     @user = current_user
