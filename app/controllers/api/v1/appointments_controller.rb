@@ -3,7 +3,7 @@ class Api::V1::AppointmentsController < ApiController
 
   def index
     @appointments = @user.appointments
-    render json: { appointments: @appointments }, status: 200
+    render json: @appointments, include: ['services'], status: 200
   end
 
   def create
