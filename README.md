@@ -39,6 +39,14 @@
 
 [Encapture Backend](https://encapture-api.herokuapp.com/)
 
+### Live demo for frontend
+[Frontend Live](https://encapture.vercel.app/)
+
+### Repository for frontend
+[Frontent Repository](https://github.com/Amita-Roy/Encapture-Client)
+
+
+
 ### Prerequisites
 
 - Ruby
