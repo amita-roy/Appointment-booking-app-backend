@@ -1,5 +1,5 @@
 class AppointmentSerializer < ActiveModel::Serializer
-  attributes :id, :date, :time, :total_amount
+  attributes :id, :date, :time, :user_id, :service_id
   belongs_to :user
-  has_many :services, through: :SelectedServices
+  belongs_to :service
 end
