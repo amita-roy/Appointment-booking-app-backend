@@ -7,14 +7,7 @@ class Api::V1::AppointmentsController < ApplicationController
   end
 
   def create
-    date = params['date']
-    time = params['time']
-    total_amount = params['total_amount']
-    @appointment = current_user.appointments.new({ date: date, time: time, total_amount: total_amount })
-    params['services'].each do |s|
-      service = Service.find(s['id'])
-      @appointment.services.push(service)
-    end
+    @appointment = current_user.appointments.new(appointment_params)
     @appointment.save
     render json: { success: 'Thanks for your booking' }, status: 200
   end
@@ -23,5 +16,9 @@ class Api::V1::AppointmentsController < ApplicationController
 
   def set_user
     @user = current_user
+  end
+
+  def appointment_params
+    params.permit(:date, :time, :user_id, :service_id)
   end
 end
