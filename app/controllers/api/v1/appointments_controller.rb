@@ -1,4 +1,4 @@
-class Api::V1::AppointmentsController < ApiController
+class Api::V1::AppointmentsController < ApplicationController
   before_action :set_user
 
   def index

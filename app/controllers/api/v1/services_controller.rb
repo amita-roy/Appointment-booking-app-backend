@@ -1,4 +1,4 @@
-class Api::V1::ServicesController < ApiController
+class Api::V1::ServicesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
   def index
